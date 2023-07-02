@@ -1,0 +1,22 @@
+/*
+    Author: Lucca de Mello
+    CS 132 Spring 2022
+    Date: April 22, 2022
+
+    This is the general stylesheet for Gravity.
+    It is used by all pages in the game to give it a consistent look and feel.
+*/
+
+body {
+    background: black;
+    height: 100vh;
+
+    margin: 0 8px;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

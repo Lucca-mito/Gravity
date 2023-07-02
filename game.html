@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Lucca de Mello
+    CS 132 Spring 2022
+    Date: April 22, 2022
+
+    This is the game view for Gravity, in which the simulation takes place. 
+    Contains the canvas and an options panel controlling simulation parameters.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity</title>
+
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="game_style.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">[back]</a>
+        <aside id="options-panel">
+            <h1>Options</h1>
+            <section id="options-panel-body">
+                <article>
+                    <label for="fps">Framerate</label>
+                    <div class="slider-container">
+                        <input type="range" id="fps"
+                               min="1" max="120" value="60" step="1">
+                        <output for="fps"></output>
+                    </div>
+                </article>
+                <article>
+                    <label for="dt">Simulation speed</label>
+                    <div class="slider-container">
+                        <input type="range" id="simulation-speed"
+                               min="1" max="100" 
+                               value="5" step="1">
+                        <output for="simulation-speed"></output>
+                    </div>
+                </article>
+                <article>
+                    <!-- 
+                        Technically this slider controls the standard 
+                        gravitational parameter (GM), which is proportional to
+                        (but not the same as) the cursor mass, but the 
+                        distinction is unimportant. 
+                    -->
+                    <label for="GM">Cursor mass</label>
+                    <div class="slider-container">
+                        <input type="range" id="GM"
+                               min="1e4" max="1e6" value="1e5" step="1e4">
+                        <output for="GM"></output>
+                    </div>
+                </article>
+                <article id="checkbox-container">
+                    <label for="spawn-randomly">Spawn randomly</label>
+                    <input type="checkbox" id="spawn-randomly">
+                </article>
+            </section>
+        </aside>
+    </header>
+    <canvas id="canvas"></canvas>
+</body>
+</html>

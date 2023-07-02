@@ -1,0 +1,83 @@
+/*
+    Author: Lucca de Mello
+    CS 132 Spring 2022
+    Date: April 22, 2022
+
+    This is the stylesheet for the game view of gravity.
+*/
+
+body {
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    color: grey;
+}
+
+h1 {
+    font-size: inherit;
+    align-self: center;
+}
+
+#options-panel {
+    overflow: scroll;
+    resize: both;
+    direction: rtl; /* So the resizing grabber is shown on the left. */
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    background-color: #222222AA;
+}
+
+#options-panel-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    
+    direction: initial;
+
+    margin-bottom: 20px;
+}
+
+#options-panel article {
+    display: flex;
+}
+
+#options-panel article:not(#checkbox-container) {
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.slider-container {
+    display: flex;
+}
+
+input[type="range"] {
+    flex-grow: 1;
+}
+
+output, input[type="checkbox"] {
+    margin-left: 10px;
+    width: 60px;
+}
+
+#checkbox-container {
+    justify-content: space-between;
+}
+
+canvas {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}

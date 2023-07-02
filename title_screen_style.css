@@ -1,0 +1,53 @@
+/*
+    Author: Lucca de Mello
+    CS 132 Spring 2022
+    Date: April 22, 2022
+
+    This is the stylesheet for the title screen of gravity.
+*/
+
+body, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    color: white;
+}
+
+main, footer {
+    margin-top: auto;
+}
+
+h1 {
+    font-family: 'Rubik Moonrocks', sans-serif;
+    font-size: 20vw;
+}
+
+a {
+    border: 1px solid white;
+    border-radius: 10%;
+    padding: 2px;
+
+    background-color: inherit;
+}
+
+footer, #tower-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+footer {
+    width: 100%;
+    font-style: italic;
+    justify-content: space-between;
+}
+
+button {
+    margin: 0;
+}
+
+.flipped {
+    transform: scale(-1, 1);
+}
