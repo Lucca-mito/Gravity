@@ -6,4 +6,4 @@ Author: Lucca de Mello
 
 Instructor: Melissa Hovik
 
-[Try it out!](lucca-mito.github.io/Gravity)
+[Try it out!](https://lucca-mito.github.io/Gravity)
